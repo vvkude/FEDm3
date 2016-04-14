@@ -203,8 +203,12 @@ sup {
 /**
  * 
  * ^3. Tabular data
+ *
+ * https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Tables
  * 
  */
+
+
 
 table {
   background: #fff;
@@ -223,7 +227,7 @@ tfoot {
   background: #f0f0f0; }
 
 tfoot td {
-  font-size: 0.625em;
+  font-size: 0.75em;
   font-weight: bold;
   font-weight: 600; }
 
