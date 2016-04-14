@@ -296,6 +296,34 @@ td {
  *
  ***/
 
+[disabled][role="button"], 
+button[disabled],
+input[disabled][type="button"],
+input[disabled][type="reset"],
+input[disabled][type="submit"] {
+  background: #F7F7F7;
+  color: #D6D6D6; 
+}
+
+/*disabled buttons have no borders and no box shadows, so: */
+/* [FIXME] I'm doing something wrong here */
+[disabled][role="button"]:hover, 
+button[disabled]:hover,
+input[disabled][type="button"]:hover,
+input[disabled][type="reset"]:hover,
+input[disabled][type="submit"]:hover {
+  background: #F7F7F7;
+  box-shadow: none; 
+}
+
+[disabled][role="button"]:active, 
+button[disabled]:active,
+input[disabled][type="button"]:active,
+input[disabled][type="reset"]:active,
+input[disabled][type="submit"]:active {
+  transform: none; 
+}
+
 .is-disabled, [disabled] {
   cursor: not-allowed; /* disable cursor on disabled items*/
   opacity: .75; 
@@ -303,12 +331,12 @@ td {
 
 /* [above] actually not an opacity change in the FTS UI Kit sketch file... */
 
-  .is-disabled + label,
-  .is-disabled + label, 
-  [disabled] + label,
-  [disabled] + label {
-    pointer-events: none; 
-  }
+.is-disabled + label, /* prevent pointer events in adjecent label siblings */
+.is-disabled + label, 
+[disabled] + label,
+[disabled] + label {
+  pointer-events: none; 
+}
 
 /***
  *
