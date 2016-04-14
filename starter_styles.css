@@ -229,7 +229,7 @@ tfoot {
 tfoot td {
   font-size: 0.75em;
   font-weight: bold;
-  font-weight: 600; }
+  font-weight: 600; } /*semibold for Open Sans*/
 
 tr {
   border-bottom: 1px solid #f0f0f0; }
