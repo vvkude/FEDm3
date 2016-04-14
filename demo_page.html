@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en-us" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <title>Vik's Stub File Starter Kit Demo</title>
+
+  <!-- reduce latency by proactively performing DNS resolution 
+       especially helpful on mobile devices
+       https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--still use this, even though MSIE10 dropped support for conditional comments?-->
+  <!--[if IEMobile]>
+  <meta http-equiv="cleartype" content="on">
+  <![endif]-->
+
+  <!-- sheets and fonts -->
+  <link rel="stylesheet" href="starter_styles.css">
+  <!-- remember the semibold and semibold italic fonts, but might not need others present -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic,700" rel="stylesheet">
+</head>
+<body>
+
+<!-- https://www.w3.org/TR/html5/sections.html#outlines-->
+
+<!-- also, not exactly what parts, if any, need to be sectioned-->
+
+  <div class="starter__page"> <!-- overall page container -->
+    <div class="starter__gutter">
+
+    <div class="starter__section">
+      <div class="starter__row">
+
+        <ul class="starter__list--inline starter__list--clean">
+          <li class="demo__colors">
+            <div class="starter__label starter--majuscule">Primary</div>
+            <div class="demo__colorswatch starter__colorswatch--large" style="background:#3c6fb4"></div>
+            <div class="starter__label starter--majuscule">#3c6fb4</div>
+          </li>
+          <li class="demo__colors">
+            <div class="starter__label starter--majuscule">Secondary</div>
+            <div class="demo__colorswatch starter__colorswatch--large" style="background:#73ace6"></div>
+            <div class="starter__label starter--majuscule">#73ace6</div>
+          </li>
+        </ul>
+
+      </div><!--/starter__row-->
+      <div class="starter__row">
+
+        <!-- [TODO] Shit, changed name from demo__colorswatch to starter__colorswatch [FIXME]-->
+        <ul class="starter__list--inline starter__list--clean">
+          <li class="demo__colors">
+            <div class="starter__label starter--majuscule">Grays</div>
+            <div class="demo__colorswatch starter__colorswatch--medium" style="background:#595959"></div>
+            <div class="starter__label starter--majuscule">#595959</div>
+          </li>
+          <li class="demo__colors">
+            <div class="demo__colorswatch starter__colorswatch--medium" style="background:#808080"></div>
+            <div class="starter__label starter--majuscule">#808080</div>
+          </li>
+          <li class="demo__colors">
+            <div class="demo__colorswatch starter__colorswatch--medium starter--majuscule" style="background:#b2b2b2"></div>
+            <div class="starter__label starter--majuscule">#b2b2b2</div>
+          </li>
+          <li class="demo__colors">
+            <div class="demo__colorswatch starter__colorswatch--medium starter--majuscule" style="background:#d6d6d6"></div>
+            <div class="starter__label starter--majuscule">#d6d6d6</div>
+          </li>
+          <li class="demo__colors">
+            <div class="demo__colorswatch starter__colorswatch--medium starter--majuscule" style="background:#f0f0f0"></div>
+            <div class="starter__label starter--majuscule">#f0f0f0</div>
+          </li>
+        </ul>
+
+      </div><!--/starter__row-->
+      <div class="starter__row">
+
+        <ul class="starter__list--inline starter__list--clean">
+          <li class="demo__colors">
+            <div class="starter_label starter--majuscule">Error</div>
+            <div class="demo__colorswatch starter__colorswatch--small" style="background:#E57373"></div>
+            <div class="demo__colorswatch starter__colorswatch--small" style="background:#CC3D3D"></div>
+            <!-- [above] it looks like there is no labelling for 
+                  the first row of error state colors in the FTS UI Kit? -->
+            <p class="starter__label starter--majuscule">#CC3D3D</p>
+          </li>
+          <li class="demo__colors">
+            <div class="starter__label starter--majuscule">Success</div>
+            <div class="demo__colorswatch starter__colorswatch--small" style="background:#BFE572"></div>
+            <div class="demo__colorswatch starter__colorswatch--small" style="background:#BFE572; opacity:.5;"></div>
+            <!-- [above] Also looks like the color labelled is not the actual color od the element?-->
+            <div class="starter__label starter--majuscule">#59800D</div>
+          </li>
+          <li class="demo__colors">
+            <div class="starter__label starter--majuscule">Warning</div>
+            <div class="demo__colorswatch starter__colorswatch--small" style="background:#FCF17E"></div>
+            <div class="demo__colorswatch starter__colorswatch--small" style="background:#FCF17E; opacity: .33;"></div>
+            <div class="starter__label starter--majuscule">#CCA029</div>
+          </li>
+        </ul>
+
+      </div><!--/starter__row-->
+    </div><!--/starter__section-->
+
+    <div class="starter__section">
+      <div class="starter__column starter__column--small">
+        <div class="starter__pipe">
+
+        <ul class="starter__list--clean">
+          <li class="starter__form--elem">
+            <!-- [below] should I make labels for all of the form elements and hide the ones that aren't visible in the UI Kit?-->
+            <label for="txt1">Text Input Default</label>
+            <input type="text" name="txt1" id="txt1" placeholder="enter text">
+          </li>
+          <li class="starter__form--elem">
+            <label for="txt2">Text Input Error</label>
+            <input type="text" name="txt2" id="txt2" placeholder="enter text">
+          </li>
+          <li class="starter__form--elem">
+            <label for="txt3">Text Input Focus</label>
+            <input type="text" name="txt3" id="txt3" placeholder="enter text">
+          </li>
+          <li class="starter__form--elem">
+            <label for="txt4">Text Input Disabled</label>
+            <input type="text" name="txt4" id="txt4" disabled placeholder="enter text">
+            <!-- kind of weird to have a placeholder that says 'enter text' on a disabled input field? no? -->
+          </li>
+          <li class="starter__form--elem">
+            <label for="number1">Number Input Default</label>
+            <input type="number" name="number1" id="number1">
+          </li>
+          <li class="starter__form--elem">
+            <label for="number2">Number Input Focus</label>
+            <input type="number" name="number2" id="number2">
+          </li>
+          <li class="starter__form--elem">
+            <label for="number3">Number Input Error</label>
+            <input type="number" name="number3" id="number3">
+          </li>
+          <li class="starter__form--elem">
+            <label for="date1">Date Input Default</label>
+            <input type="date" name="date1" id="date1">
+         
+          
+          </li>
+          <li class="starter__form--elem">
+            <label for="dropdown1">Dropdown Default</label>
+            <select name="dropdown1" id="dropdown1">
+              <option value="" selected disabled>Pick an option</option>
+              <option value="0">Option here</option>
+              <option value="1">Option here</option>
+              <option value="2">Option here</option>
+              <option value="3">Option here</option>
+              <option value="4">Option here</option>
+              <option value="5">Option here</option>
+            </select>
+          </li>
+          <li class="starter__form--elem">
+            <label for="dropdown2">Dropdown Default</label>
+            <select name="dropdown2" id="dropdown2" disabled>
+              <option value="" selected disabled>Pick an option</option>
+              <option value="0">Option here</option>
+              <option value="1">Option here</option>
+              <option value="2">Option here</option>
+              <option value="3">Option here</option>
+              <option value="4">Option here</option>
+              <option value="5">Option here</option>
+            </select>
+          </li>
+          <li class="starter__form--elem">
+            <fieldset>
+              <legend>Have a legend?</legend>
+              <label for="checkbox1">
+                <input type="checkbox" id="checkbox1" name="checkbox1" disabled> Checkbox Disabled
+              </label>
+              <label for="checkboxx2">
+                <input type="checkbox" id="checkbox2" name="checkbox2"> Checkbox Default
+              </label>
+              <label for="checkbox3">
+                <input type="checkbox" id="checkbox3" name="checkbox3"> Checkbox Focus
+              </label>
+              <label for="checkbox4">
+                <input type="checkbox" id="checkbox4" name="checkbox4"> Checkbox Error
+              </label>
+              <label for="checkboxk5">
+                <input type="checkbox" id="checkbox5" name="checkbox5" checked> Checkbox Selected
+              </label>
+            </fieldset>
+          </li>
+          <li class="starter__form--elem">
+            <fieldset>
+              <legend>Have a legend?</legend>
+              <label for="radio1">
+                <input type="radio" id="radio1" name="radio1" disabled> Radio Disabled
+              </label>
+              <label for="radio2">
+                <input type="radio" id="radio2" name="radio2"> Radio Default
+              </label>
+              <label for="radio3">
+                <input type="radio" id="radio3" name="radio3"> Radio Focus
+              </label>
+              <label for="radio4">
+                <input type="radio" id="radio4" name="radio4"> Radio Error
+              </label>
+              <label for="radio5">
+                <input type="radio" id="radio5" name="radio5"> Radio Selected
+              </label>
+            </fieldset>
+          </li>
+           <li class="starter__form--elem">
+            <label for="range1">45%</label>
+            <input type="range" name="range1" id="range1">
+          </li>
+          <li class="starter__form--elem">
+            <label for="range2">45%</label>
+            <input type="range" name="range2" id="range2">
+          </li>
+          <li class="starter__form--elem">
+            <label for="range3">45%</label>
+            <input type="range" name="range3" id="range3">
+          </li>
+          <!-- [TODO] add appearance none to CSS and style progress bars approriately-->
+          <!-- look at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress-->
+          <progress value="50" max="100"></progress>
+          <progress value="100" max="100"></progress>
+          <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">primary default</button>
+            <!-- [TODO] should prbably make text transform UPPERCASE part of the button style?-->
+          </li>
+          <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">primary hover</button>
+          </li>
+          <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">primary press</button>
+          </li>
+           <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">secondary default</button>
+          </li>
+          <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">secondary hover</button>
+          </li>
+          <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">secondary press</button>
+          </li>
+          <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">cancel default</button>
+          </li>
+          <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">cancel hover</button>
+          </li>
+          <li class="starter__form--elem">
+            <button type="button" class="button starter--majuscule">cancel press</button>
+          </li>
+        </ul>
+
+        </div><!--/starter__pipe-->
+      </div><!--/starter__column starter__column--small-->
+      <div class="starter__column starter__column--large">
+        <div class="starter__pipe">
+
+          <div class="starter__label starter__label--text">h1</div>
+          <h1>Grumpy wizards make toxic brew grumpy wizards make toxic</h1>
+
+          <div class="starter__label starter__label--text">h2</div>
+          <h2>Grumpy wizards make toxic brew grumpy wizards make toxic</h2>
+
+          <div class="starter__label starter__label--text">h3</div>
+          <h3>Grumpy wizards make toxic brew grumpy wizards make toxic</h3>
+
+          <div class="starter__label starter__label--text">h4</div>
+          <h4>Grumpy wizards make toxic brew grumpy wizards make toxic brew grumpy wizards make toxic brew</h4>
+
+          <div class="starter__label starter__label--text">h5</div>
+          <h5>Grumpy wizards make toxic brew grumpy wizards make toxic brew grumpy wizards make toxic brew</h5>
+
+          <div class="starter__label starter__label--text">h6</div>
+          <h6>Grumpy wizards make toxic brew grumpy wizards make toxic brew grumpy wizards make toxic brew</h6>
+
+          <div class="starter__spacer">
+
+            <!-- [below] [TODO]have to escape the <code>here</code> -->
+            <div class="starter__label starter__label--text">Body Large</div>
+            <p>Charles Barkley continued to speak out about race relations and police in America in an interview with CNN that aired on Wednesday, saying that he didn’t think a Staten Island grand jury should indict the New York City police officers involved in the death of Eric Garner should1234 be indicited</p>
+            <p>Garner, who was1234 suspected of selling cigarettes illegally, died after an officer put him in an awesome <code>here</code> illegal chokehold while attempting to arrest him in July. The incident, which was caught on videotape, sparked national outrage.</p>
+
+            <div class="starter__spacer">
+
+            <div class="starter__column starter__column--medium">
+              <p><strong>This is some more text</strong></p>
+              <p><u>This is some more text</u></p>
+              <p><strong><em>This is some more text</em></strong></p>
+              <p><strike>This is some more text</strike></p>
+            </div><!--/starter__column starter__column--medium-->
+            <div class="starter__column starter__column--medium">
+              <p><strong><u>This is some more text</u></strong></p>
+              <p><a href="#">This is some more text</a></p>
+              <p><code>here</code></p>
+              <p><highlight>Charles Barkley</highlight></p>
+            </div><!--/starter__column starter__column--medium-->
+
+          </div><!--/starter__spacer-->
+
+            <div class="starter__label starter__label--text">Body Medium</div>
+            <p>Charles Barkley continued to speak out about race relations and police in America in an interview with CNN that aired on Wednesday, saying that he didn’t think a Staten Island grand jury should indict the New York City police officers involved in the death of Eric Garner should1234 be indicited</p>
+            <p>Garner, who was1234 suspected of selling cigarettes illegally, died after an officer put him in an awesome <code>here</code> illegal chokehold while attempting to arrest him in July. The incident, which was caught on videotape, sparked national outrage.</p>
+
+            <div class="starter__label starter__label--text">Body Small</div>
+            <p><small>Charles Barkley continued to speak out about race relations and police in America in an interview with CNN that aired on Wednesday, saying that he didn’t think a Staten Island grand jury should indict the New York City police officers involved in the death of Eric Garner should1234 be indicited.</small></p>
+            <p></small>Garner, who was1234 suspected of selling cigarettes illegally, died after an officer put him in an awesome <code>here</code> illegal chokehold while attempting to arrest him in July. The incident, which was caught on videotape, sparked national outrage.</small></p>
+
+          </div><!--/starter__spacer-->
+
+          <!-- [TODO] fix and add About Charles section-->
+
+          <div class="starter__spacer starter__row">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th scope="col">Column</th>
+                  <th scope="col">Column</th>
+                  <th scope="col">Column</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <td></td>
+                <td>Column Foot</td>
+                <td>Column Foot</td>
+                <td>Column Foot</td>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <th scope="row">Row</th>
+                  <td>Row data goes here</td>
+                  <td>Row data goes here</td>
+                  <td>Row data goes here</td>
+                </tr>
+                <tr>
+                  <th scope="row">Row</th>
+                  <td>Row data goes here</td>
+                  <td>Row data goes here</td>
+                  <td>Row data goes here</td>
+                </tr>
+                <tr>
+                  <th scope="row">Row</th>
+                  <td>Row data goes here</td>
+                  <td>Row data goes here</td>
+                  <td>Row data goes here</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!--/starter__spacer-->
+
+          <div class="starter__row">
+
+            <div class="" aria-live="polite">
+              <p>This is a generic notification</p>
+            </div><!--/.alert-->
+            <div class="" aria-live="polite">
+              <p>This is a generic notification</p>
+            </div><!--/.alert-->
+            <div class="" aria-live="polite">
+              <p>This is a generic notification</p>
+            </div><!--/.alert-->
+            <div class="" aria-live="polite">
+              <p>This is a generic notification</p>
+            </div><!--/something for the notifications-->
+
+            <!-- [TODO] Figure and figcaption-->
+
+          </div><!--/starter__row-->
+
+        </div><!--/starter__pipe-->
+      </div><!--/starter__column starter__column--large-->
+    </div><!--/starter-section-->
+
+    </div><!--/starter__gutter-->
+  </div><!--/starter__page-->
+
+</body>
+</html>
