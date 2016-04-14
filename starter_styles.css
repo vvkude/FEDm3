@@ -256,11 +256,11 @@ th[scope="col"] {
 td {
   font-size: 0.75em; }
 
-/**
+/***
  * 
  * ^4. Buttons
  * 
- */
+ ***/
 
 /* [below] havent figured these out yet, but here are some selectors from MDN
 .button,
@@ -285,6 +285,30 @@ td {
   box-shadow: inset 0px 4px 0px 0px rgba(255,255,255,0.15);
   border-radius: 2px; 
 }
+
+/***
+ *
+ * ^state modifiers
+ *
+ * control under what circumstances a particular 
+ * graphic element can become the target of mouse events:
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
+ *
+ ***/
+
+.is-disabled, [disabled] {
+  cursor: not-allowed; /* disable cursor on disabled items*/
+  opacity: .75; 
+}  
+
+/* [above] actually not an opacity change in the FTS UI Kit sketch file... */
+
+  .is-disabled + label,
+  .is-disabled + label, 
+  [disabled] + label,
+  [disabled] + label {
+    pointer-events: none; 
+  }
 
 /***
  *
